@@ -23,8 +23,8 @@ import platform
 sys_info = platform.system()
 if 'Windows' in sys_info:
     trade_day_path = r'H:\QuantData\BaseData\TradeDay.pkl'
-elif 'Windows' in sys_info:
-    trade_day_path = r'H:\QuantData\BaseData\TradeDay.pkl'
+elif 'Darwin' in sys_info:
+    trade_day_path = r'/Volumes/Quant/QuantData/BaseData/TradeDay.pkl'
 
 
 

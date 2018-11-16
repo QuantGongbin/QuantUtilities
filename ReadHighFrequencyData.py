@@ -17,11 +17,10 @@ if 'Windows' in sys_info:
     trans_path = r'H:\QuantData\AShareHighFrequencyData\Transaction'
     tick_path = r'H:\QuantData\AShareHighFrequencyData\Tick'
     order_path = r'H:\QuantData\AShareHighFrequencyData\Order'
-
-elif 'Mac' in sys_info:
-    trans_path = r'H:\QuantData\AShareHighFrequencyData\Transaction'
-    tick_path = r'H:\QuantData\AShareHighFrequencyData\Tick'
-    order_path = r'H:\QuantData\AShareHighFrequencyData\Order'
+elif 'Darwin' in sys_info:
+    trans_path = r'/Volumes/Quant/QuantData/AShareHighFrequencyData/Transaction'
+    tick_path = r'/Volumes/Quant/QuantData/AShareHighFrequencyData/Tick'
+    order_path = r'/Volumes/Quant/QuantData/AShareHighFrequencyData/Order'
 
 def get_file_path(path, trade_date):
     '''
